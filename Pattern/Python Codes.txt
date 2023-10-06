@@ -1,0 +1,280 @@
+8
+
+
+#Print Function
+
+print("Aakash Roy")
+print(10+30)
+print("Aakash Roy","I am from Kolkata")
+print(20>5)
+print(20<5)
+
+#Variable(no special character without '_', non space, not start with number or special character,no key word
+a=10
+b=10
+print(a,b)
+print(id(a),id(b))
+
+#string
+c="Hello"
+print(c)
+
+#concatination(+)
+d="World"
+print(c+' '+d)
+print(a+b)
+
+#Arithmatic_operator(+,-,*,/,mod(%),exponent(**),floor division'//'(previous value of decimal)),
+print(a%3)
+print(a**2)
+print(a/3)
+print(a//3)
+
+#Operators(Async operator, Comparison operator,Logical operator,Identify operator,Membership operator, Bytewise opeator)
+
+9>
+
+
+#Assignment Operator
+x=10
+print(x)
+x+=20 # x=x+20
+print(x)
+x-=15 # x=x-15
+print(x)
+y=5
+print(x==y)
+print(x>y)
+print(x>=y)
+#logical operator
+
+print("Logical Operator")
+print(x>y and x==y)
+print(x>y or x==y)
+print(not(x>y and x==y))
+#Membership operator
+
+print("Membership operator")
+a="Hello World"
+print('o' in a)
+print('z' not in a)
+#Identify Operator
+
+print("Identify Operator")
+b=10
+c=10
+print(b is c,b==c)
+print(b is not c,b!=c)
+
+#Bitwise Operator
+
+print("Bitwise Operator")
+d=30 #11110
+e=20 #10100
+print(bin(d))
+print(bin(e))
+print(d & e, bin(d & e))
+print(d | e, bin(d | e))
+print(d ^ e, bin(d ^ e))
+
+11>
+
+#to know the type of the variable
+a=10
+b='Aakash'
+c='''Hi my name is Aakash ,I live in Jadavpur''' #multilined string
+d=5+10j
+print(type(a))
+print(type(b))
+print(type(c))
+print(type(d))
+#list
+l=[5,'Aakash',5.5,10+5j]
+print(type(l))
+l[0]=20
+print(l)
+#Tuple
+m=(5,'Aakash',5.5,10+5j)
+print(type(m))
+
+#Dictionary
+n={'name':'Aakash','age':27,'gender':'male'}
+print(type(n))
+print(n['age'])
+
+#set
+o={5,10,20,30,10}
+print(o)
+
+12>
+
+#TypeCasting
+a=int(input('enter the value '))
+b=int(input('enter the value '))
+print(a+b)
+#conditionl Statement
+#IF
+c=int(input('enter the value '))
+if c % 2 == 0:
+ print('The number is Even')
+else:
+    print('The number is Odd')
+#IF ELIF ELF
+d=int(input('enter the value '))
+if d >= 70 :
+    print('First division')
+elif d >= 60 :
+    print('Second Division')
+elif d>= 50 :
+    print('third Division')
+elif d >= 40:
+    print('Pass')
+else :
+    print('Failed')
+e = int(input('enter the value '))
+if  e == 1 :
+    print('Sunday')
+elif e == 2 :
+    print('Monday')
+elif e == 3 :
+    print('Tuesday')
+elif e == 4 :
+    print('Wednesday')
+elif e == 5 :
+    print('Thursday')
+elif e == 6 :
+    print('Friday')
+elif e == 7 :
+    print('Saturday')
+else :
+    print('Wrong Day')
+#calculator
+num1 = int(input('enter the value '))
+num2 = int(input('enter the value '))
+opr = input('enter the operator ')
+if opr == '+' :
+    print(num1 + num2)
+elif opr == '-' :
+    print(num1 - num2)
+elif opr == '*' :
+    print(num1 * num2)
+elif opr == '/' :
+    print(num1 / num2)
+else :
+    print('Invalid Input')
+
+14>
+
+# # For Loop
+for n in range(1,11) :
+    print(n)
+
+for m in range(10,0,-1) :
+    print(m)
+
+for o in range(1,11) :
+    print('5 x',o,'=',5*o)
+
+# While Loop
+
+p = 10
+while p >= 1 :
+    print(p)
+    p = p-1
+
+15>
+
+# For Loop
+# 1
+# 1 2
+# 1 2 3
+# 1 2 3 4
+# 1 2 3 4 5
+
+row = 5
+for i in range(1,row + 1): # i is the outer loop
+    for j in range(1,i+1):
+        print(j, end=' ')
+    print(" ")
+
+16>
+
+#string indexing
+q ="Hello World"
+print(q[4]) #left to right
+print(q[-2]) # right to left
+#Slicing
+print(q[0:5])  #searching(starting point:end point+1)
+print(q[0::2]) #increment of Slicing(start point::increment)
+print(q[-11:-7])
+print(q[-11::2])
+
+r = "My Name is Aakash Roy"
+print(r[0::2])
+print(r[0::2])
+
+#Iterration
+s = len(q)
+t = len(r)
+print(s)
+for i in range(s) :
+    print(q[i])
+print(" ")
+for i in range(s-1,-1,-1) : # in reverse order
+    print(q[i])
+print(" ")
+for i in range(t):
+    print(r[i])
+print(" ")
+for i in range(t-1,-1,-1):
+    print(r[i])
+
+____________________________________
+for i in range(1,51) :
+    if i % 2 == 0 :
+        print(i,'is Even Number')
+    else :
+        print(i,'is ODD number')
+
+
+____________________________________
+
+#list
+l = [12,75,150,180,145,575,56,75]
+
+for k in l:
+    if k > 500:
+        break
+    elif k > 150:
+        continue
+    elif k % 5 == 0:
+        print(k)
+
+#prime number
+Start = 25
+End = 50
+print("prime numbers between ",Start,"and",End,"are")
+for num in range(Start, End + 1):
+    if num > 1:
+        for i in range(2, num):
+            if (num % i) == 0:
+                break
+        else:
+            print(num)
+___________________________________________________________
+#two string is given and make a new string using those 2 string
+#rule: a1 string 1st character and a2 string last character are taken
+#rule2: a1 2nd character and a2 string 2nd last character are taken
+a1 = "ABC"
+a2 = "XYZ" # expected output = AZBYCX
+b1 = (len(a1))
+b2 = (len(a2))
+length = b1 if b1 > b2 else b2
+result = ""
+a2 = a2[ ::-1]
+for i in range(length):
+    if i < b1 :
+        result = result + a1[i]
+        if i < b2 :
+            result = result + a2[i]
+print(result)
